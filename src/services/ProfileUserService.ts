@@ -5,11 +5,11 @@ class ProfileUserService {
     const user = await prismaClient.user.findFirst({
       where: {
         id: user_id,
-      }
+      },
     });
 
     return user;
   }
 }
 
-export { ProfileUserService }
+export { ProfileUserService };
